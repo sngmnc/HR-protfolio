@@ -437,7 +437,7 @@ export default function App() {
                     <div className="lg:col-span-1">
                       <h3 className="text-2xl font-black text-white mb-2 group-hover:text-brand-primary transition-colors uppercase tracking-tighter">{career.company}</h3>
                       <p className="text-brand-primary font-bold text-sm mb-6 tracking-widest">{career.period}</p>
-                      <div className="inline-block px-4 py-2 bg-white/10 text-slate-200 text-xs font-black rounded-xl uppercase tracking-widest border border-white/5">
+                      <div className="inline-block px-6 py-3 bg-white/10 text-slate-200 text-sm font-black rounded-2xl uppercase tracking-widest border border-white/10">
                         {career.position}
                       </div>
                     </div>
