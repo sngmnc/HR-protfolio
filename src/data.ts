@@ -296,7 +296,7 @@ export const INITIAL_DATA: PortfolioData = {
     contact: { title: "CONTACT", subtitle: "Connect & Inquire" }
   },
   contact: {
-    summary: "조직의 탄생과 성장의 전 과정을 함께 고민할 준비가 되었습니다.",
+    summary: "좋은 조직 운영은 명확한 기준에서 시작된다고 믿습니다.\n조직이 안정적으로 운영될 수 있도록, 필요한 기준을 만들고 꾸준히 개선하겠습니다.",
     email: "mins6060@gmail.com",
     emailLabel: "Digital correspondence",
     phone: "010-XXXX-XXXX",

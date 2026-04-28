@@ -437,7 +437,7 @@ export default function App() {
                     <div className="lg:col-span-1">
                       <h3 className="text-2xl font-black text-white mb-2 group-hover:text-brand-primary transition-colors uppercase tracking-tighter">{career.company}</h3>
                       <p className="text-brand-primary font-bold text-sm mb-6 tracking-widest">{career.period}</p>
-                      <div className="inline-block px-3 py-1.5 bg-white/10 text-slate-300 text-[10px] font-black rounded-lg uppercase tracking-widest">
+                      <div className="inline-block px-4 py-2 bg-white/10 text-slate-200 text-xs font-black rounded-xl uppercase tracking-widest border border-white/5">
                         {career.position}
                       </div>
                     </div>
@@ -714,15 +714,17 @@ export default function App() {
               <h2 className="text-5xl md:text-8xl font-black text-white tracking-tighter mb-10 uppercase">
                 {data.sectionTitles?.contact?.title || "Connect"}
               </h2>
-              <p className="text-xl md:text-3xl text-slate-400 font-medium mb-20 max-w-3xl mx-auto leading-tight">
+              <p className="text-xl md:text-3xl text-slate-400 font-bold mb-20 max-w-5xl mx-auto leading-[1.3] opacity-80 whitespace-pre-line">
                 {data.contact.summary}
               </p>
               
               <div className="flex justify-center mb-32">
-                <a href={`mailto:${data.contact.email}`} className="group text-center p-10 bg-white/5 rounded-3xl border border-white/10 w-full max-w-xl hover:border-brand-primary transition-all shadow-2xl">
-                  <Mail className="text-brand-primary mb-6 mx-auto" size={40} />
-                  <div className="text-[10px] font-black uppercase tracking-[0.4em] text-slate-500 mb-2">{data.contact.emailLabel}</div>
-                  <div className="text-2xl font-black text-white group-hover:text-brand-primary transition-colors break-all md:break-normal">{data.contact.email}</div>
+                <a href={`mailto:${data.contact.email}`} className="group text-center p-12 bg-white/5 rounded-[3rem] border border-white/10 w-full max-w-2xl hover:border-brand-primary transition-all shadow-2xl overflow-hidden relative">
+                  <div className="absolute top-0 right-0 w-40 h-40 bg-brand-primary/10 rounded-full -mr-20 -mt-20 blur-3xl group-hover:bg-brand-primary/20 transition-all duration-700"></div>
+                  <Mail className="text-brand-primary mb-8 mx-auto" size={52} />
+                  <div className="text-3xl md:text-4xl font-black text-white group-hover:text-brand-primary transition-colors break-all md:break-normal tracking-tighter">
+                    {data.contact.email}
+                  </div>
                 </a>
               </div>
 
